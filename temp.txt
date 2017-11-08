@@ -1,0 +1,34 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT catalog (book)+>
+<!ATTLIST catalog
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT book (author,title,genre,price,publish_date,description)>
+<!ATTLIST book
+  xmlns CDATA #FIXED ''
+  id NMTOKEN #REQUIRED>
+
+<!ELEMENT author (#PCDATA)>
+<!ATTLIST author
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT genre (#PCDATA)>
+<!ATTLIST genre
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT publish_date (#PCDATA)>
+<!ATTLIST publish_date
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT description (#PCDATA)>
+<!ATTLIST description
+  xmlns CDATA #FIXED ''>
